@@ -35,3 +35,6 @@ bundle.setLangDefault('fr')
 // get i18n message in current lang
 bundle.get('hello') // 'Hello'
 ```
+
+## Credits
+- [x18n](https://github.com/florian/x18n)
