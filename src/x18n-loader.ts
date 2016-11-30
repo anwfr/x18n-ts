@@ -31,7 +31,7 @@ export class X18nLoader {
         x18n.setDefault(langDefault)
     }
 
-    get(messageKey, params?) {
+    t(messageKey, params?) {
         return x18n.t(messageKey, params)
     }
 }

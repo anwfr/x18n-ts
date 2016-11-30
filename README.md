@@ -24,7 +24,7 @@ bundle.set('fr', {
 })
 
 // get i18n message in current lang
-bundle.get('hello') // 'Bonjour override'
+bundle.t('hello') // 'Bonjour override'
 
 // switch lang
 bundle.setLang('en')
@@ -33,7 +33,7 @@ bundle.setLang('en')
 bundle.setLangDefault('fr')
 
 // get i18n message in current lang
-bundle.get('hello') // 'Hello'
+bundle.t('hello') // 'Hello'
 ```
 
 ## Credits
