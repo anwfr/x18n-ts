@@ -8,7 +8,7 @@ import {X18nLoader} from '../lib/x18n-ts'
 
 let lang = 'fr'
 let langDefault = 'en'
-let bundle = new X18nLoader(lang, langDefault) // optional parameters - can be set later with setLang() or setLangDefault()
+let bundle = new X18nLoader(lang, langDefault) // optional parameters - can be set later
 
 // set i18n messages
 bundle.set('fr', {
