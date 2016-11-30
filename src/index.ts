@@ -1,0 +1,1 @@
+export {X18nLoader} from './x18n-loader'
