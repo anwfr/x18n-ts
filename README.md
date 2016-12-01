@@ -19,8 +19,10 @@ bundle.set('en', {
     'hello': 'Hello',
     'bye': 'Bye'
 })
-bundle.set('fr', {
-    'hello': 'Bonjour override' // override previous value
+
+// override i18n messages
+bundle.override('fr', {
+    'hello': 'Bonjour override'
 })
 
 // get i18n message in current lang

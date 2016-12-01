@@ -13,14 +13,18 @@ export class X18nLoader {
     }
 
     set(lang, i18nMessages) {
-        // update plandynI18n object
-        if (!this.i18n[lang]) {
-            this.i18n[lang] = {}
-        }
-        Object.assign(this.i18n[lang], this.i18n[lang], i18nMessages)
+        this.i18n[lang] = i18nMessages
 
         // update x18n configuration
         x18n.register(lang, this.i18n[lang])
+    }
+
+    override(lang, i18nMessages) {
+        // override current messages
+        let currentMessages = this.i18n[lang] || {}
+        Object.assign(currentMessages, currentMessages, i18nMessages)
+
+        this.set(lang, i18nMessages)
     }
 
     setLang(lang) {
