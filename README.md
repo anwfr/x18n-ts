@@ -1,5 +1,6 @@
 # X18n-ts
 - Typescript wrapper for X18n - A sane JavaScript internationalisation library
+- Tested with webpack
 
 ## Installation
 
