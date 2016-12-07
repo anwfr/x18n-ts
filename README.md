@@ -1,6 +1,12 @@
 # X18n-ts
 - Typescript wrapper for X18n - A sane JavaScript internationalisation library
 
+## Installation
+
+```
+npm install x18n
+```
+
 ## Usage
 
 ```javascript
