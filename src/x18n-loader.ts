@@ -1,4 +1,4 @@
-import * as x18n from 'x18n'
+import * as x18n from "x18n";
 
 export class X18nLoader {
     private i18n = {}
@@ -35,7 +35,8 @@ export class X18nLoader {
         x18n.setDefault(langDefault)
     }
 
-    t(messageKey, params?) {
-        return x18n.t(messageKey, params)
+    t(messageKey, ...params) {
+        params.unshift(messageKey)
+        return x18n.t.apply(this, params)
     }
 }
